@@ -7,18 +7,9 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
 
-# ============================================================
-#  НАЛАШТУВАННЯ
-# ============================================================
+TELEGRAM_TOKEN = "8048853860:AAFBqZXjiAkb9WPD1TKsTiPtjzlSPuK70aE"
+TELEGRAM_CHAT_ID = "487660355"
 
-TELEGRAM_TOKEN = "8048853860:AAFBqZXjiAkb9WPD1TKsTiPtjzlSPuK70aE"  # від @BotFather
-TELEGRAM_CHAT_ID = "487660355"            # твій особистий chat_id
-
-# ============================================================
-#  УЧАСНИКИ VIBER-ГРУПИ
-#  date: "ДД.ММ"
-#  message: None = використати DEFAULT_MESSAGE
-# ============================================================
 
 MEMBERS = [
     {
@@ -28,10 +19,6 @@ MEMBERS = [
     },
     # --- додавай нових учасників тут ---
 ]
-
-# ============================================================
-#  ЛОГІКА — не потрібно редагувати
-# ============================================================
 
 def send_telegram(text: str) -> bool:
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
@@ -63,7 +50,7 @@ def main():
             name = member["name"]
             birthday_text = member.get("message")
 
-            # Повідомлення тобі в Telegram
+            # Повідомлення тобі
             reminder = (
                 f"🎂 <b>Сьогодні день народження — {name}!</b>\n\n"
                 f"Скопіюй і відправ у Viber-групу:\n"
