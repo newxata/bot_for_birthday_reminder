@@ -8,13 +8,13 @@ logging.basicConfig(
 )
 
 TELEGRAM_TOKEN = "8048853860:AAFBqZXjiAkb9WPD1TKsTiPtjzlSPuK70aE"
-TELEGRAM_CHAT_ID = "487660355"
+TELEGRAM_CHAT_ID = "-5171781241"
 
 
 MEMBERS = [
     {
         "name": "Сергію",
-        "date": "17.03",
+        "date": "18.03",
         "message": 'Мій друг, це перший БОТ який запрацював, я ВІТАЮ тебе, ти найкращий!!!!',
     },
     # --- додавай нових учасників тут ---
