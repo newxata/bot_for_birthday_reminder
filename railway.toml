@@ -1,7 +1,0 @@
-[deploy]
-startCommand = "python bot.py"
-
-[cron]
-schedule = "*/15 * * * *"
-# Київ взимку (UTC+2): 9:00 → 7:00 UTC  = "0 7 * * *"
-# Київ влітку  (UTC+3): 9:00 → 6:00 UTC  = "0 6 * * *"
