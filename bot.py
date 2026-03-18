@@ -1,4 +1,5 @@
 import requests
+import os
 from datetime import datetime
 import logging
 
@@ -7,8 +8,8 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
 
-TELEGRAM_TOKEN = "8048853860:AAFBqZXjiAkb9WPD1TKsTiPtjzlSPuK70aE"
-TELEGRAM_CHAT_ID = "-5171781241"
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 
 MEMBERS = [
